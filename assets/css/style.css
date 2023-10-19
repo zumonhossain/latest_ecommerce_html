@@ -1,0 +1,338 @@
+/*
+  Theme Name: Zumon Hossain
+  Author: zumonhossain.com
+  Support: zumonhossain@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Google Fonts
+2. Theme Default
+3. Section Heading
+4. Header
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+*/
+
+/*
+==========================================
+    Google Fonts
+==========================================
+*/
+/* font-family: 'Rubik', sans-serif;  */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+/*
+==========================================
+    Theme Default Css
+==========================================
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--black);
+}
+
+:root {
+    --themeColor: #ffaa17;
+    --white: #ffffff;
+    --black: #222429;
+    --text: #686a6f;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    color: var(--black);
+}
+
+a,
+.button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--allHeadingColor);
+}
+
+hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+*::-moz-placeholder {
+    color: #555555;
+    opacity: 1;
+    font-size: 14px;
+}
+
+*::-webkit-input-placeholder {
+    color: #555555;
+    opacity: 1;
+    font-size: 14px;
+}
+
+*:-ms-input-placeholder {
+    color: #555555;
+    opacity: 1;
+    font-size: 14px;
+}
+
+*::-ms-input-placeholder {
+    color: #555555;
+    opacity: 1;
+    font-size: 14px;
+}
+
+*::placeholder {
+    color: #555555;
+    opacity: 1;
+    font-size: 14px;
+}
+
+*::-moz-selection {
+    background: #ffffff;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #ffffff;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #ffffff;
+    color: #fff;
+    text-shadow: none;
+}
+
+.section_padding {
+    padding: 120px 0px;
+}
+
+.section_padding_top {
+    padding-top: 120px;
+}
+
+.section_padding_bottom {
+    padding-bottom: 120px;
+}
+
+.section_top_space {
+    padding-top: 50px;
+}
+
+.section_bg {
+    background-color: var(--sectionBackground);
+}
+
+/*
+==============================================================
+    Common Button Css
+==============================================================
+*/
+.common_btn {
+    text-align: center;
+    line-height: 0px;
+}
+
+.common_btn .common_btn_link {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    background: var(--themeColor);
+    color: var(--black);
+    border-radius: 5px;
+    overflow: hidden;
+    border: none;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.common_btn .common_btn_link:hover {
+    background: var(--themeColor);
+    color: var(--white);
+}
+
+.common_btn .common_btn_link i {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.common_btn .common_btn_link .common_btn_icon {
+    position: absolute;
+    right: -15px;
+    top: 0;
+    width: 26px;
+    height: 100%;
+    background: var(--black);
+    opacity: .2;
+    z-index: 0;
+    transform: skewX(-22deg);
+    transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.common_btn .common_btn_link:hover .common_btn_icon {
+    opacity: 1;
+    right: 0;
+    width: 100%;
+    transform: skewX(0);
+}
+
+.common_btn .common_btn_link .common_btn_title {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    padding: 19px 50px 16px;
+    z-index: 1;
+}
+
+/*
+==============================================================
+    Section Heading Css
+==============================================================
+*/
+.section_title {
+    position: relative;
+}
+
+.section_title h2 {
+    position: relative;
+    font-size: 40px;
+    display: block;
+    line-height: .9em;
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 400;
+    margin-bottom: 0;
+}
+/*
+==============================================================
+    Header Area Css
+==============================================================
+*/
+
+/*
+==============================================================
+    Responsive Area Css
+==============================================================
+*/
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+@media screen and (max-width: 375px) {
+
+}
+
+@media screen and (max-width: 350px) {
+
+}
